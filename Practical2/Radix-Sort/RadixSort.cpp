@@ -1,5 +1,4 @@
 //Aim: To perform Radix.
-
 #include<iostream>
 using namespace std;
 
@@ -62,8 +61,16 @@ int main(){
     int arr[5]={20,36,27,75,55};
     int n=5;
 
+    cout<<"before sorting: ";
+
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+
     radixsort(arr,n);
 
+    cout<<"after sorting: ";
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
     }
